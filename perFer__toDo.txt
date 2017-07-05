@@ -1,0 +1,155 @@
+﻿
+Nom: Aplicació d'etiquetat d'imatges.
+Projecte: Polen
+Desarrollat per el grup de VxC (DISCA / UPV)
+correu: magusti@disca.upv.es
+
+***********************************************************+
+Coses per fer / To do / ...
+***********************************************************+
+
+
+
+Tens algo anotat al manualUsuari.odt. Anar completant-ho en açò i memtant-ho.
+
+
+***********************************************************+
+Treballs futurs / Posibles millores / Coses a incorporar en atres versions.
+
+DECISIÓ: no en esta versió. Pot haver canvit de plataforma de creació i cal acabar.
+***********************************************************+
+
+ Us del teclat i ratolí (menú contextual en una anotació: borrar, canviar tipo, posició, ...).
+Zoom?
+
+ Guardar una llista dels últims projectes oberts?
+
+ En "importar etiquetes",  podria comprovar si n'hi han duplicats en text de les etiquetes ja existents. 
+ 
+ Generar informes en versió HTML?, ...
+
+  “Etiquetas: Fusionar” Tens pendent decidir si té sentit fer el “fusionar” de resultats. Axiò venia per si abans de borrar una etiqueta, volies asignar les anotacions a atra. Tal volta t'has donat conter que t'has equivocat al triar una nova etiqueta?
+
+
+************************************************************
+FET
+************************************************************
+
+v 0.7
+Fet EL IMPORTAR el fitxer de anotacions
+Acabar de revisar el text de les etiquetes que encara en queden en valencià. ;-)
+
+Es pot borrar ja una entrada qualsevol de les anotacions. Acabar les entrades dels scripts de opcions de etiquetes i de resultats
+ Resultats: Editar. "Resultats" (els ja etiquetats, recorrer-los llevant-en, canviant d'etiqueta, de tamany, …).
+
+
+v 0.6
+ 
+
+ Entrades dels scripts de opcions de etiquetes i de resultats: Etiquetas -> +/Editar
+
+ La tecla BloqDespl (al costat d'imprimir pantalla) canvia l'estat de visibilitat del grup de controls que guarden les variables intermitjes i botons auxiliars: "controlsInterns" 
+
+ Funciona el llançar el fitxer que conté l'ajuda en el navegador.
+ Al menú d'ajuda: tecles i manual d'usuari <-- fitxer HTML extern?. Tens el còdic per llançar una URL en Ayuda|Ayuda, però no funciona
+
+ Des de els menús de Configurar ja s'envia el mensatge als "Editar" de Etiquetes i Resultats.
+ Ja són botons (i no "pestanyes") les opcions visibles de Resultats.
+ Revisat l'error de objecte que ja no existeix al llevar el de les pestanyes per redimensionar l'aplicació
+
+
+ Introduïnt separaors als menús i "atajos" de teclat.
+
+ Amague el grup de controls interns cada volta que s'obri la pila, per si de cas.
+
+ Exportar i importar etiquetes (definicions de polens)
+ Conectar el borrar resultats en "Resetejar anotacions", previa confirmació de l'usuari.
+
+ Per questions de visualitzacio, que l'usuari no veja alguns detalls i que queden ahí a ma: 
+  * Femt "Don't wrap" el camp de resultats (anotacions).
+  * Canviant delimitaors a tabuladors, entre tots els camps de les etiquetes llevat del color que queda per comes (R,G,B) i als resultats es queda la posició entre comes (columna, fila ) i per tabuladors la resta (#etiqueta i ID del gràfic asociat). Alternatives serien un "table field" (que pots dir l'amplaria visible de cada columna), un dataGrid? o amagar en atre camp eixes informacions que no vols que veja l'usuari.
+
+ He ficat "toolTips" als botons d'etiquetes i resultats.
+
+ Canvit de filosofia: ara que ja es poden borrar, "importar etiquetes" no matxaca. Importar anyadeix al final. Si vols que siga una llista nova, has de borrar-la previament i després  importes.
+
+ Anyadir una entrada de carregar i guardar en fitxer les definicions de polen, per reaprofitar un treball anterior.
+
+ Acabar les entrades dels scripts de opcions de etiquetes i de resultats
+ Etiquetas: Borrar 
+ Resultats: Borrar
+
+
+Al menú de "Configurar" anyadir en Configurar atres entrades per conectar en els atres botons de Etiquetes i Resultats? --> "Editar" en "Etiquetas" (anyadir-ne, llevar-ne, modificar-ne), 
+
+"Herramientas" --> generar informes en versió TXT/CVS
+
+ Guardar en un temporal resultats, al anyadir-ne un, p. ex.
+Btn “CopiaDeSeguretat” es activat per “visorImage” incremente fld “nCanvitsSenseSalvar” i els guarda en disc “anotacions.bak”, cada volta que n'hi han més de fld “cadaQuantsCanvitsSalvar”. Quant s'exporta el fitxer d'anotacions es borra este BAK.
+
+
+Comprovar si has fet algún canvit en la llista actual i preguntar si guardar abans de "Importar etiquetas …"? No fa falta s'anyadeixen sempre al final. Si vols els buides abans de ficar-ne atres.
+ 
+  Botó secundari a la llista de resultats mostra una caixa de diàlec en les característiques d'eixa anotació.
+
+   He ficat un "Cerrar imagen" que lleva la imatge de pantalla i crida a "Exportar anotaciones" per guardar els resultats i fa "Vaciar" resultatst (anotacions). Deixe la llista de etiquetes perque es suposa que es seguirà gastant en atres ocasions. Buide també els camps ocults que tenen informació global (el grup "controlsInterns").
+
+
+v 0.4
+Tens una xocoteta ajuda que te recorda els "atajos" de teclat.
+Al menú d'ajuda: Teclest que es poden gastar i crèdits. Encara no està el manual d'usuari.
+
+M'ha desaparegut la mirilla!!! L'he recuperat!!!
+
+
+No s'actualitzava el número de etiqueta activa en el camp "laEtiquetaActiva" al seleccionar-la des de el camp llista_etiquetes.
+
+Al menú de Fichero fer un Guardar que guarde el "projecte": fitxer d'anotacions en text pla + ruta relativa (?) del fitxer mapa de bits
+Ficar contaors de anotacions i d'anotacions de cada tipo
+ És simplement sumar u en la paraula que corresponga d'un camp de conteig d'anotacions i sumar-les per tindre el total.
+ És pot recrear al carregar una imatge, perfecte!
+Les anotacions, deuen incloure el radi de la anotació
+
+Exemple
+# Fichero de anotaciones de
+/home/magusti/nvestigacio/projectes/polen/imatges/Milflores - 3840 x 3072_disca_1.jpg
+
+# Fecha
+2017,5,11,16,27,0,5
+#Etiquetes
+3
+#Anotacions
+3
+Etiquetes
+Polen 1                  255,0,0
+Polen 2                  0,255,0
+Polen 3                  0,0,255
+Anotacions
+143,117,1,89
+446,366,2,418
+176,511,3,368
+
+ 
+ 
+ 
+v 0.3
+ Enviar event sintetic a la llista d'etiquetes per que deixe la primera com "activa"
+Les coordenaes de les anotacions es donen en relació a l'oritge de coordenaes de la targeta, no de la imatge. CANVIA-HO!
+ Qué pasa si canvies de tamany la finestra --> escalar? No seria millor mostrar una finestra de la  imatge a la seua resolució original, sempre!
+ En eixe cas, no pots fer un Zoom per si necesites vore algo en més de detall? En eixe cas el factor d'escala si que te servirà
+
+v 0.2
+ Imatge a tamany original. Minimitza errors de posicionament de l'àrea de marcat (anotació)
+ La finestra es redimensiona i els objectes dins ho fan tammé.
+ La imatge i les marques es deplacen conforme es menejen les barres de desplaçament per treballar en una part de la imatge.
+ 
+v 0.1 
+
+Generar versions executables.
+Corregir les coordenaes en función del "top-left" de la imatge 
+Disposar d'un àrea visible (cercle) que remarca la anotació. '+' i '-' per fer varial el radio --> tamany de la marca.
+    'r' i 'R' o '+ i '-' per modificar radio de la anotació. 
+Borrar mirilles (part gràfica de les anotacions).
+
+v 0.0 
+Planteamiento inicial: importar una imagen desde la caixa de diàlec i anotar les coordenaes del click del ratolí
