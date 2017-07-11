@@ -1,0 +1,4 @@
+Gastant LiveCode 9.0 dp4 Community Edition  ~/.runrev/components/livecodecommunity-8.0.0-dp-4\ \(x86_64\)/livecodecommunity.x86_64 
+
+Projecte guarda't en:
+https://github.com/magusti/annotate_images
