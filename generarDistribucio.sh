@@ -57,10 +57,10 @@ cd build/estable
 #tar czvf ../anotarPolen__Windows_v1_0.tgz 	Polen__windows
 #tar czvf ../anotarPolen__macOSX_v1_0.tgz	Polen__macOSX
 
-zip -r ../anotarPolen__Linux_x64_v1_0.zip	Polen__linux_x64
-zip -r ../anotarPolen__Linux_x32_v1_0.zip	Polen__linux_x32
-zip -r ../anotarPolen__Windows_v1_0.zip 	Polen__windows
-zip -r ../anotarPolen__macOSX_v1_0.zip          Polen__macOSX
+zip -r ../anotarPolen__Linux_x64_v1_1.zip	Polen__linux_x64
+zip -r ../anotarPolen__Linux_x32_v1_1.zip	Polen__linux_x32
+zip -r ../anotarPolen__Windows_v1_1.zip 	Polen__windows
+zip -r ../anotarPolen__macOSX_v1_1.zip          Polen__macOSX
 
 
 
