@@ -1,0 +1,10 @@
+# Fichero de anotaciones de
+/home/magusti/investigacio/projectes/polen/imatges/Milflores - 3840 x 3072_disca_1.jpg
+# Fecha
+2017,7,11,2,52,0,3
+#Etiquetes
+1
+polen 1	10	222	245	
+#Anotacions
+1
+500,2045	1	1700	3173

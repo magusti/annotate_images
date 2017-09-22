@@ -10,8 +10,6 @@ Coses per fer / To do / ...
 
 
 
-Tens algo anotat al manualUsuari.odt. Anar completant-ho en açò i memtant-ho.
-
 
 ***********************************************************+
 Treballs futurs / Posibles millores / Coses a incorporar en atres versions.
@@ -34,6 +32,15 @@ Zoom?
 ************************************************************
 FET
 ************************************************************
+
+v 1.0
+
+Tens algo anotat al manualUsuari.odt. Anar completant-ho en açò i comemtant-ho.
+Actualizat el PDF i l'ajuda com a un resum breu del manual.
+Actualitzat el script de "generarDistribuicio.sh": ara crea un ZIP per cada plataforma destí, el que facilita la distribució i instalació.
+
+Corregits errors menuts vist durant el procés i canvià la propietat del títol per que indique la versió.
+
 
 v 0.7
 Fet EL IMPORTAR el fitxer de anotacions
